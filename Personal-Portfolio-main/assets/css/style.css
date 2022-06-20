@@ -10,13 +10,13 @@ body {
 header {
   padding: 15px;
   text-align: center;
-  background: #13293d;
-  color: #fff;
+  background: #35132f;
+  color: whitesmoke;
 }
 
 nav {
   display: flex;
-  background-color: #d8a47f;
+  background-color: #e4d48e;
 }
 
 nav a {
@@ -33,8 +33,9 @@ main {
 
 aside {
   flex: 1;
-  background-color: #b9c6ae;
+  background-color: #c9aebb;
   padding: 10px;
+  text-align: center;
 }
 
 section {
@@ -54,13 +55,10 @@ section {
 footer {
   padding: 15px;
   text-align: center;
-  background: #13293d;
-  color: #fff;
+  background: #35132f;
+  color: whitesmoke;
 }
 
-.text-right {
-  
-}
 
 @media screen and (max-width: 768px) {
   /* Use flex-direction to stack the navbar, sidebar, and body */
