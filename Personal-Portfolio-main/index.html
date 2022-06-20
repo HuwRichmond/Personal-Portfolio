@@ -15,17 +15,19 @@
 
     <!-- URL links added for Github and Linkedin for the navbar. Placeholder # used for portfolio and navigation link applied to contact me -->
     <!--nav and links to be seperate from the "body" section of the page so different properties/characteristics can be applied-->
+    <!--a tags were used to make these items anchors so that "portfolio" and "contact" can link to specific sections of the page-->
     <nav>
       <a href="https://github.com/">Github</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Contact</a>
+      <a href="#Portfolio">Portfolio</a>
+      <a href="#Contact">Contact</a>
       <a href="https://au.linkedin.com/">Linkedin</a>
     </nav>
 
     <main>
       <!--aside used as the name for the sidebar.-->
+      <!--Contact given an id of "contact" to create the link for the anchor contact above-->
       <aside>
-        <h2>Contact me</h2>
+        <h2 id="Contact">Contact</h2>
         <!--placeholder image used to create a space for applying personal avatar icon-->
         <a href="https://placeholder.com"><img src="https://via.placeholder.com/100"></a>
         <!--unsorted list used for contact details, name, email, phone etc to appear on the portfolio screen-->
@@ -40,9 +42,12 @@
       <!--this section is for the headshot, please note there is a jpg and png format of the same photo-->
       <!--please note, when i created the image source for the headshot, the navbar stopped stacking under the image and started stacking on top of the image when resized-->
     <section>
-      <h2>About me</h2>
+      <h3>About me</h3>
       <div class="sample-img">Image</div>
       <img src="./assets/headshot.png" alt="Headshot/photo of me">
+      
+      <!-- portfolio given the header (h4) so that it can be used as an anchor for the portfolio link on the nav bar-->
+      <h4 id="Portfolio">Portfolio</h4>
       <p>
         <a href="https://huwrichmond.github.io/Week1/Develop/index.html">Deployed Application 1</a>
       </p>
@@ -54,9 +59,9 @@
 
     <footer>
       <!--this is to appear across the bottom of the page-->
-      <h3>
+      <h5>
         Made by Huw Richmond with Visual Studio Code
-      </h3>
+      </h5>
     </footer>
   </body>
 </html>

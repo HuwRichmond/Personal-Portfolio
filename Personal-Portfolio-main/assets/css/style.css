@@ -45,13 +45,7 @@ section {
   padding: 20px;
 }
 
-.sample-img {
-  background-color: #fff;
-  width: 100%;
-  padding: 20px;
-  height: 200px;
-  border: 1px solid black;
-}
+
 /*footer background and text colours was matched to the header colour*/
 footer {
   padding: 15px;
@@ -67,6 +61,7 @@ footer {
   nav {
     flex-direction: column;
   }
+  
   /* used to make the sidebar appear after the main text when screen resized */
   aside {
     order: 3;
