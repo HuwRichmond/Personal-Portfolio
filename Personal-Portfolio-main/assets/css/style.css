@@ -3,10 +3,11 @@
 }
 
 body {
+  /*3 different fonts used as browser options*/
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
-
+/* text centered and with padding to make the header appear prominent, same colouring used as the footer*/
 header {
   padding: 15px;
   text-align: center;
@@ -19,18 +20,19 @@ nav {
   background-color: #e4d48e;
 }
 
+/* navbar across the top underneath the header. text decoration none used to make the underline not appear on URL links*/
 nav a {
   color: #13293d;
   padding: 15px 15px;
   text-decoration: none;
-  text-align: center;
+  text-align: right;
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
 }
-
+/*the navbar on the side of the screen */
 aside {
   flex: 1;
   background-color: #c9aebb;
@@ -51,7 +53,7 @@ section {
   height: 200px;
   border: 1px solid black;
 }
-
+/*footer background and text colours was matched to the header colour*/
 footer {
   padding: 15px;
   text-align: center;
@@ -59,24 +61,16 @@ footer {
   color: whitesmoke;
 }
 
-
+/*media screen functions reverse engineered from media screen exercise to use the functionality to have navbar stack at the top of screen and sidebar stack at the bottom when viewed on smartphone */
 @media screen and (max-width: 768px) {
-  /* Use flex-direction to stack the navbar, sidebar, and body */
+  /* The media screen and flex direction was used here to make the navbar and sidebar stack above and below when resized for small devices */
   main,
   nav {
     flex-direction: column;
   }
-  /* Make the sidebar stack below the body */
+  /* used to make the sidebar appear after the main text when screen resized */
   aside {
     order: 2;
   }
-  /* Change the header background */
-  header {
-    background: #772014;
-  }
-  /* Change the navbar and footer background */
-  nav,
-  footer {
-    background-color: #bb8588;
-  }
+  
 }
