@@ -25,7 +25,7 @@ nav a {
   color: #13293d;
   padding: 15px 15px;
   text-decoration: none;
-  text-align: right;
+  text-align: center;
 }
 
 main {
@@ -37,7 +37,6 @@ aside {
   flex: 1;
   background-color: #c9aebb;
   padding: 10px;
-  text-align: center;
 }
 
 section {
@@ -70,7 +69,7 @@ footer {
   }
   /* used to make the sidebar appear after the main text when screen resized */
   aside {
-    order: 2;
+    order: 3;
   }
   
 }
